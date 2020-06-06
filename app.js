@@ -17,7 +17,7 @@ gsap.from(".cover-text", {
 const navOpen = document.querySelector(".dare"),
   navPoint = document.querySelector(".nav-open");
 
-const tl = gsap.timeline({ paused: true });
+const tl = gsap.timeline({ paused: true, reversed: true });
 tl.to(".cover", { width: "60%", ease: Power2.easeOut }).to(
   ".nav-open",
   {
